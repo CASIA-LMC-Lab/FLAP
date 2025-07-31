@@ -7,6 +7,8 @@ from models.hf_llama.modeling_llama import LlamaForCausalLM
 
 from importlib.metadata import version
 
+import torch
+
 from lib.prune import prune_wanda_sp, prune_flap, prune_magnitude_sp, check_sparsity
 from lib.eval import eval_ppl
 
